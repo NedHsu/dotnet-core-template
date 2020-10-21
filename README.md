@@ -92,3 +92,9 @@ dotnet aspnet-codegenerator identity -h
 dotnet aspnet-codegenerator identity --useDefaultUI --dbContext ApiIdentityContext
 dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore
 ```
+
+Migrations
+```
+dotnet ef migrations add CreateIdentitySchema -c ApiIdentityContext
+dotnet ef database update -c ApiIdentityContext
+```
